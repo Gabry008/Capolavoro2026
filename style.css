@@ -169,11 +169,10 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
       align-items: center;
     }
-
     .profile-placeholder {
       height: 350px;
       border-radius: 24px;
@@ -237,9 +236,9 @@
     }
 
     .picture_container{
-    width: 650px;
-    height: auto;
-    }
+  width: 100%;
+  max-width: 650px;
+  }
 
     .picture {
     width: 100%;
@@ -251,6 +250,7 @@
     box-shadow:
         0 4px 10px rgba(0,0,0,0.08),
         0 12px 30px rgba(0,0,0,0.12);
+    max-width: 100%;
     }
 
     .link-section {
@@ -276,4 +276,156 @@
         padding: 5rem 6%;
       }
     }
+
+    /* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  section {
+    padding: 5rem 5%;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .picture_container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  nav {
+    width: 92%;
+    padding: 1rem 2rem;
+  }
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  nav {
+    width: 95%;
+    top: 10px;
+    padding: 1rem;
+    border-radius: 24px;
+  }
+
+  nav ul {
+    gap: 0.7rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.3rem, 10vw, 4rem);
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  section {
+    padding: 4rem 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .glass-card {
+    padding: 1.5rem;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .timeline-dot {
+    margin-top: 0;
+  }
+
+  .picture_container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .picture {
+    width: 100%;
+    height: auto;
+  }
+
+  .description {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 1.5rem 1rem;
+  }
+}
+
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  @media (max-width: 480px) {
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .glass-card {
+    padding: 1.2rem;
+    border-radius: 18px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .topic-card h3 {
+    font-size: 1.1rem;
+  }
+  }
+
   </style>
