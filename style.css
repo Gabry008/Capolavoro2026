@@ -254,11 +254,20 @@
     }
 
     .link-section {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-    }
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
 
+    .link-section li {
+    text-align: center;
+    max-width: 700px;
+  } 
+  
     .link-color {
       color: #a855f7;
     }
